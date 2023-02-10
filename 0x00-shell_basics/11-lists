@@ -1,2 +1,12 @@
 #!/bin/bash
-ls -aln . .. /boot
+
+echo "Current directory:"
+ls -al $(pwd)
+echo ""
+
+echo "Parent of the current directory:"
+ls -al $(pwd)/..
+echo ""
+
+echo "/boot directory:"
+ls -al /boot
